@@ -9,3 +9,4 @@ services:
     command: node index.js
     environment:
       DEV: Hello
+      BOTH: Win

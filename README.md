@@ -4,16 +4,22 @@
 
 ## Example
 
-**Docker Stack Deploy**
+**Docker Stack Extends**
 
 ```bash
 docker stack deploy --compose-file=<(docker-compose -f docker/prod.yml -f docker/dev.yml config) <stackname>
 ```
 
-**Local Docker Compose**
+**Docker Compose Extends**
 
 ```bash
 docker-compose -f docker/prod.yml -f docker/dev.yml up
+```
+
+**Verify the Files Merge Correctly**
+
+```bash
+docker-compose -f docker/prod.yml -f docker/dev.yml config
 ```
 
 ## Testing

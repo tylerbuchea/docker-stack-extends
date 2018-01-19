@@ -9,3 +9,4 @@ services:
     command: node index.js
     environment:
       PROD: World
+      BOTH: Fail
